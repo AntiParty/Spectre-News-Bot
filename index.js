@@ -5,7 +5,6 @@ const fs = require('fs');
 // Use the Discord token from environment variables
 const TOKEN = process.env.DISCORD_TOKEN; // Replace with your actual token
 const postedLinks = new Set();
-const newsChannels = {};
 
 // Create the bot instance with appropriate intents
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
