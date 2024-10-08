@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 import requests
@@ -8,8 +9,8 @@ import logging
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 
-# Replace with your bot token
-TOKEN = ''
+# Use the environment variable for the bot token
+TOKEN = os.getenv('DISCORD_BOT_TOKEN')
 
 # URL to check for news
 NEWS_URL = 'https://playspectre.com/news/'
@@ -128,4 +129,4 @@ async def main():
         await bot.start(TOKEN)
 
 # Run the bot using asyncio.run()
-asyncio.run(main())
+asyncio.run(main
