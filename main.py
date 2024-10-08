@@ -129,4 +129,4 @@ async def main():
         await bot.start(TOKEN)
 
 # Run the bot using asyncio.run()
-asyncio.run(main
+asyncio.run(main())
